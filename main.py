@@ -322,7 +322,6 @@ class Outook:
 
 
 if __name__ == "__main__":
-
     config__sheet_name = input('请输入你的自定义邮件主题sheet名===>回车继续 o^^o如果不输入则使用默认配置config:')
     config_name = 'config'
     if config__sheet_name.strip():
@@ -330,6 +329,7 @@ if __name__ == "__main__":
     else:
         pass
     excel_file = "email.xlsx"
+    files = 'imgage'
     # author=====>Ecke EXW009 ##############################################
     print('powered by python library--pywin32,pandas,os,pathlib,random')
     df = pd.read_excel(excel_file, sheet_name='data')
